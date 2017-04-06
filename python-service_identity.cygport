@@ -1,0 +1,15 @@
+inherit python-wheel
+
+NAME="python-service_identity"
+VERSION=16.0.0
+RELEASE=1
+CATEGORY="Python"
+SUMMARY="Service identity verification for pyOpenSSL"
+DESCRIPTION="Use this package if you use pyOpenSSL and don’t want to be MITMed.
+service_identity aspires to give you all the tools you need for verifying
+whether a certificate is valid for the intended purposes."
+
+ARCH=noarch
+
+python2_service_identity_REQUIRES="python2-idna python2-openssl"
+python3_service_identity_REQUIRES="python3-idna python3-openssl"
